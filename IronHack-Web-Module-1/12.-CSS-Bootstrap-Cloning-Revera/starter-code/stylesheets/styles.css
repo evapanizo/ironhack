@@ -1,0 +1,251 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Typography */
+
+body {
+  color: #212529;
+}
+
+p {
+  font-size: 0.9rem;
+  padding: 0 0.8rem;
+}
+
+h1 {
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Navigation Bar */
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 2rem;
+  padding-left: 2.4rem;
+}
+
+.nav-item {
+  font-size: 0.9rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ED564B;
+}
+
+.navbar-nav > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+  color: #ED564B;
+}
+
+.dropdown-item {
+  font-size: 0.8rem;
+  background-color: #f8f9fa!important;
+  margin: 0;
+  padding: 0.5rem;
+  color: #00000080;
+}
+
+#navbarDropdown {
+  color: #00000080;
+}
+
+#navbarDropdown:hover, .dropdown-item:hover {
+  color: #ED564B;
+}
+
+/* Carousel */
+
+.d-block {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  background-color: #ED564B;
+  padding: 0.2rem;
+  width: 1rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 40%;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.carousel-control-prev:hover span {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ED564B' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next:hover span {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#ED564B' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+#carousel-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+.btn {
+  font-size: 0.8rem;
+}
+
+.btn-outline-secondary {
+  color: #212529;
+  border-color: #212529;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #565758;
+  border-color: #212529;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+/* Features section */
+
+#features {
+  background-color: #ED564B;
+  color: whitesmoke;
+}
+
+.feature {
+  padding: 1.2rem 0;
+}
+
+.icon-img {
+  width: 20%;
+}
+
+/* Projects section */
+
+.project-items img, .article-items img {
+  width: 90%;
+}
+
+.project-items a, .article-items a {
+  display: inline-block;
+  margin: 1.4rem 0;
+  color: #212529;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.project-item, .article-item {
+  margin: 0.8rem 0;
+  padding: 0;
+  padding: 0.5rem;
+}
+
+.article-text { 
+  font-size: 0.8rem;
+  padding: 0;
+}
+
+.projects-title, .articles-title {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #212529;
+  width: 90%;
+}
+
+.projects-title > p, .articles-title > p {
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #828283;
+}
+
+.post-date, .post-date a {
+  padding: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #828283;
+}
+
+.post-date a {
+  color: #ED564B;
+  margin: 0;
+}
+
+.post-date a:hover {
+  color: black;
+}
+
+/* Footer menu section */
+
+#footer-menu {
+  background-color: #3B3B3B;
+  border-top: 5px solid #ED564B;
+  padding: 2rem 1rem;
+}
+
+.footer-item {
+  padding: 1.2rem 0.6rem;
+}
+
+.footer-item h3{
+  color: whitesmoke;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.footer-item p, .footer-item a {
+  color: #918F8F;
+  font-size: 0.8rem;
+}
+
+.footer-item a:hover { 
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.list-group-item {
+  background-color: #3B3B3B;
+  border: 1px dotted #918F8F;
+  padding: 0 0 .4rem 0;
+}
+
+.list-group-item:nth-child(1) {
+  border-top: none;
+}
+
+.list-group-item:last-child {
+  border-bottom: 1px dotted #918F8F!important;
+}
+
+/* Copyright section */
+
+#copyright-section {
+  width: 100%;
+  color: whitesmoke;
+  background-color:#292929;
+  padding: 1.2rem;
+}
+
+#copyright-section p {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0 1rem;
+}

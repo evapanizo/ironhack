@@ -1,0 +1,24 @@
+<main class="profile-container">
+  <section class="other-trainer-profile">
+    <article class="profile-title">
+      <h1><%= trainer.username %></h1> 
+    </article>
+    <article class="profile-picture">
+      <img src="<%= trainer.avatar %>" class="avatar" alt="Profile picture">
+    </article>
+    <article class="trainer-info">
+      <img src="<%= trainer.gender %>" class="gender-img" alt="Gender Logo">
+      <p class="trainer-age-location"><%= trainer.age %> - <%= trainer.location %></p>
+    </article>
+    <article class="trainer-description">
+      <p><%= trainer.description %></p>
+    </article>
+    <article class="telegram-info">
+      <img src="/images/telegram-logo.png" class="telegram-icon" alt="Telegram Logo">
+      <p class="telegram-text"><%= trainer.telegram %></p>
+    <article class="nav-options">
+      <a href="<%= url %>" class="editpr">Go back</a>
+    </article>
+   </section>
+    <% include ../partials/navbar.ejs %>
+</main>

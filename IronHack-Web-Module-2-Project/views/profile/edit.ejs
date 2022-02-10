@@ -1,0 +1,47 @@
+<main class="edit">
+  <header class="edit-title">
+    <img src="/images/EDIT.png" alt="edit" class="title" >
+  </header>
+  <section class="auth-form">
+    <form action="/profile" method="post">
+      <div class="field">
+        <label for="age">Age</label>
+        <input type="number" min="0" max="100" step="1" class="form-inputs" name="age" value="<%= trainer.age %>">
+      </div>
+      <div class="field">
+        <label for="gender">Gender</label>
+        <% if(trainer.gender === "/images/male-logo.png") { %>
+          <input type="radio" id="male" name="gender" value="/images/male-logo.png" checked/>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="/images/female-logo.png"/>
+          <label for="female">Female</label>
+        <% } else { %>
+          <input type="radio" id="male" name="gender" value="/images/male-logo.png"/>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="/images/female-logo.png" checked/>
+          <label for="female">Female</label>
+        <% } %>
+      </div>
+      <div class="field">
+        <label for="location">Location</label>
+        <input type="text" name="location" class="form-inputs" value="<%= trainer.location %>">
+      </div>
+      <div class="field">
+        <label for="telegram">Telegram</label>
+        <input type="text" name="telegram" class="form-inputs" value="<%= trainer.telegram %>">
+      </div>
+      <div class="field">
+        <label for="avatar">Avatar URL</label>
+        <input type="text" name="avatar" class="form-inputs">
+      </div>
+      <div class="field">
+        <label for="description">Description</label>
+        <input type="text" name="description" class="form-inputs description-input" value="<%= trainer.description %>">
+      </div>
+      <div class="field">
+        <input type="submit" class="auth-btn" value="Save">
+        <a href="/profile" class="auth-link edit-link">Back</a>
+      </div>
+    </form>
+  </section>
+</main>

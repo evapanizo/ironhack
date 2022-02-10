@@ -1,0 +1,27 @@
+<main class="auth">
+  <header class="auth-title">
+    <img src="/images/SIGNUP.png" alt="signup" class="title">
+  </header>
+  <section class="auth-form">
+    <form method="POST" action="/auth/signup">
+      <div class="field" >
+        <label for = "username">You need a trainer-name<br>in this poke-world...<br></label>
+        <input type="text" name="username" class="form-inputs" placeholder="Username" maxlength="15"/>
+      </div>
+      <div class="field" >
+        <label for = "password">...and a pokepass<br></label>
+        <input type="password" name="password" class="form-inputs" placeholder="Password"/>
+      </div>
+      <div class="field-submit-link">
+        <input type="submit" value ="Sign Up" class="auth-btn">
+        <a href="/" class="auth-link">Back</a>
+      </div>
+    </form>
+  </section>
+  <section class="auth-notification">
+    <% include ../partials/notifications %>
+  </section>
+  <section class="sign-up-img">
+    <img src="/images/pokemons.png" alt="Awesome picture of pokemons" class="pokemon-img">
+  </section>
+</main>

@@ -1,0 +1,310 @@
+/* ---- Reset ---- */
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* ---- Typography ---- */
+
+body {
+  color: #5B5E6D;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 147%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #2C303F;
+}
+
+h1 {
+  line-height: 40px;
+  font-size: 3.5rem;
+}
+
+p {
+  font-weight: 100;
+}
+
+.small-text {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0px;
+}
+
+/* ---- Structures ---- */
+
+.hidden {
+  display: none;
+}
+
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.line {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #979797;
+  margin: 4px;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 20px 0px 10px 0px;
+  padding: 15px 30px;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.standard-btn {
+  background-color: #192592;
+  color: whitesmoke;
+}
+
+.reverse-btn {
+  background-color: white;
+  color: #192592;
+  border-color: #192592;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #F4F3F4;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+}
+
+/* ---- Navigation Bar ---- */
+
+#navigation-bar {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-bottom: 1px solid #F4F3F4;
+  z-index: 2;
+  width: 100%;
+}
+
+#navigation-bar img {
+  width: 60%;
+  vertical-align: middle;
+}
+
+#flex-img-container {
+  width: 50%;
+}
+
+#menu-list {
+  position: fixed;
+  margin: 0;
+  padding: 20px 0px 0px 0px;
+  height: 100vh;
+  top: 64px;
+  right: 0px;
+  background-color: white;
+  border-left: 1px solid #F4F3F4;
+  z-index: 0;
+}
+
+#menu-list li {
+  list-style-type: none;
+  padding: 15px 10px;
+  font-size: 1.6rem;
+}
+
+#menu-list a {
+  text-decoration: none;
+  color: #5B5E6D;
+}
+
+/* ---- Header ---- */
+
+header {
+  padding-top: 25%;  
+}
+
+header h1 {
+  width: 70%;
+}
+
+header p {
+  margin: 30px 0px;
+}
+
+header img {
+  margin: 50px 0px;
+} 
+
+/* ---- Main ---- */
+/* - Companies Section - */
+
+#companies-section {
+  background-color: #F4F3F4;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#companies-section h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+#companies-section p {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#companies-section button {
+  margin: 10px 0px 20px 0px;
+}
+
+.border-logo {
+  border-bottom: 1px solid #979797;
+}
+
+.company-logo-container:nth-child(6){
+  border-bottom: 0px;
+}
+
+.company-logo-container {
+  padding: 40px 0px;
+}
+
+.company-logo-container img {
+  width: 130px;
+  vertical-align: middle;
+}
+
+.company-logo-container:nth-child(4) img {
+  width: 60%;
+}
+
+/* - Trial Section - */
+
+#trial-section {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #979797;
+}
+
+#trial-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#trial-section p {
+  color: #2C303F;
+  margin: 5px 0px;
+}
+
+/* ---- Footer ---- */
+
+#footer-logo-container {
+  width: 30%;
+}
+
+#footer-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footer-menu ul {
+  width: 40%;
+  margin: 0;
+}
+
+#footer-menu li:nth-child(1) {
+  font-weight: 900;
+}
+
+#footer-menu li {
+  list-style-type: none;
+  margin: 15px 0px;
+  font-size: 1.2rem;
+}
+
+#options-contact-section {
+  background-color: #F4F3F4;
+  padding-bottom: 60px;
+}
+
+#contact-privacy-section {
+  display: flex;
+  text-align: center;
+  padding: 15px 0px 10px 0px;
+}
+
+#contact-privacy-section li {
+  width: 33%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+#language-selection{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#language-selection span {
+  width: 30%;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+#language-selection div {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+#language-selection div:nth-child(1) img {
+  width: 25px; 
+  vertical-align: middle;
+}
+
+#language-selection div:nth-child(3) img {
+  width: 15px; 
+  vertical-align: middle;
+}
+
+#social-container {
+  width: 100%;
+  text-align: center;
+}
+
+#social-container img{
+  width: 8%;
+  margin: 30px 10px;
+}

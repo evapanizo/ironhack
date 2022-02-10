@@ -1,0 +1,206 @@
+/* ---- Reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* ---- Typography ---- */
+
+body {
+  color: #1A1A1A;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+h3 {
+  margin: 35px 0px;
+}
+
+a {
+  color: #1A1A1A;
+}
+
+/* ---- Navigation Bar ---- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 20;
+}
+
+nav img {
+  width: 200px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+#menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+/* ---- Intro Section ---- */
+
+#intro-section {
+  padding-top: 100px;
+  margin: 0;
+  height: 800px;
+  background-image: url('../images/landing.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  position: relative;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#intro-section h1 {
+  position: absolute;
+  top: 320px;
+  left: 300px;
+  font-size: 5em;
+  font-weight: 500;
+}
+
+#intro-section p {
+  position: absolute;
+  top: 400px;
+  left: 320px;
+  font-size: 1.8em;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+/* ---- What's On Section ---- */
+
+#whats-on-section {
+  padding: 60px 30px 100px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#whats-on-section h2 {
+  width: 100%;
+  text-align: center;
+}
+
+#whats-on-section h2 span{
+  font-size: 1.4em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #00B172;
+}
+
+.card {
+  width: 33%;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.card div {
+  height: 88px;
+}
+
+.card img {
+  width: 30%;
+}
+
+.card h3 {
+  color: #00B172;
+  font-size: 1.7em;
+  font-weight: 900;
+}
+
+.card p {
+  font-size: 1.5em;
+  font-weight: 100;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+/* ---- Features Section ---- */
+
+#features-section {
+  background-color: #00B172;
+  margin: 0px 20px 50px 20px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 100px;
+}
+
+#features-section > img {
+  position: absolute;
+  width: 10%;
+  top: 350px;
+  left: 550px;
+}
+
+#features-article {
+  width: 50%;
+}
+
+#features-article h2 {
+  width: 100%;
+  margin-bottom: 75px;
+}
+
+#features-article h2 span{
+  font-size: 1.4em;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 4px solid white;
+}
+
+#features-article h3 {
+  font-size: 1.8em;
+}
+
+#features-article p {
+  font-size: 1.4em;
+  font-weight: 100;
+  line-height: 30px;
+  width: 65%;
+}
+
+#wireframes-article {
+  width: 50%;
+  padding-top: 25px;
+  text-align: right;
+}
+
+#wireframes-article img{
+  width: 60%;
+}

@@ -1,0 +1,22 @@
+<main class="add-pokemon-container">
+  <header id="search-pokemon">
+    <h1 class="add-trade-title">Which Pokemon do you have?</h1>
+  </header>
+  <section class="search-pokemon">
+    <input class="search-input" type="text" name="pokemon" placeholder="Find a Pokemon"><br>
+    <div id="search-options"></div>
+    <button class="add-trades-link">Add</button>
+    <p id="error-message" class="alert-danger"></p>
+  </section>
+  <section class="pokemon-box">
+    <form method="POST" action="/trades/add/myPokemon" id="checkbox-form">
+      <input type="submit" id="hidden-btn" class="hidden add-trades-link" value ="Add all">
+    </form>
+  </section>
+  <% include ../partials/navbar.ejs %>
+</main>
+<script src="/javascripts/axios.js"></script>
+<script src="/javascripts/main.js"></script>
+<script src="/javascripts/check-search.js"></script>
+
+

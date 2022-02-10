@@ -1,0 +1,114 @@
+/* ---- Reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Typography ---- */
+
+body {
+  color: #414040;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+  font-weight: 200;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 5em;
+  margin: 0;
+  font-weight: 200;
+}
+
+h2 {
+  color: #202020;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+  font-size: 1.6em;
+  line-height: 1.3em;
+}
+
+li {
+  font-size: 1.3em;
+}
+
+/* ---- Structure ---- */
+
+.container {
+  margin: 50px 200px;
+}
+
+.strong-border {
+  border-bottom: 2px solid #686868;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.info-img {
+  width: 50%;
+}
+
+.lists {
+  padding: 0;
+  line-height: 1.7em;
+  list-style-type: none;
+}
+
+/* ---- Title Section ---- */
+
+#title-section {
+  background-image: url('../images/apple-pie.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+  height: 690px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---- Ingredients Section ---- */
+
+#ingredients-section ul > li:before {
+  content: "- ";
+}
+
+/* ---- Directions Section ---- */
+
+#directions-section {
+  padding-bottom: 50px;
+}
+
+#directions-section ol {
+  counter-reset: list;
+}
+
+#directions-section ol > li:before {
+  counter-increment: list;
+  content: counter(list) ") ";
+}

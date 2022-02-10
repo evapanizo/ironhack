@@ -1,0 +1,30 @@
+/* ---- Reset ---- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* ---- Form ---- */
+.form-container {
+  padding-top: 35px;
+  padding-left: 50px;
+}
+
+/* ---- Form Field ---- */
+.field {
+  width: 400px;
+}
+
+/* ---- Message ---- */
+.message-container {
+  width: 350px;
+  margin-left: 50px;
+  margin-top: 60px;
+}

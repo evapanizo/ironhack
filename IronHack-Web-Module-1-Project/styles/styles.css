@@ -1,0 +1,302 @@
+/* --------------- Reset -------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* --------------- Typography ----------------------- */
+@font-face {
+  font-family: "gameplay";
+  src: url("../fonts/gameplay.ttf") format('truetype');
+}
+
+* {
+  font-size: 16px;
+  font-family: "gameplay", sans-serif;
+  color: #F4FAFF;
+}
+
+/* --------------- Animations ----------------------- */
+
+@keyframes pulse-background {
+  0% {
+    background-color: #87BDE9;
+  }
+  25% {
+    background-color: #4BAEFA;
+  }
+  50% {
+    background-color: #0D89E9;
+  }
+  75% {
+    background-color: #4BAEFA;
+  }
+  100%{
+    background-color:#87BDE9;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(20deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-20deg);
+  }
+  75%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: rotate(20deg);
+    bottom: 5%;
+  }
+  25% {
+    transform: rotate(-20deg);
+  }
+  50%{
+    transform: rotate(20deg);
+    bottom: 25%;
+  }
+  75%{
+    transform: rotate(-20deg);
+  }
+  100%{
+    transform: rotate(20deg);
+    bottom: 5%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 0%;
+  }
+  50%{
+    bottom: 5%;
+    width: 10%;
+    right: 12%;
+  }
+  100%{
+    bottom: 0%;
+  }
+}
+
+@keyframes run {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 90%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+/* --------------- Structures ----------------------- */
+
+.btn {
+  font-size: 1em;  
+  letter-spacing: 0.2em;
+  text-shadow: 1px 1px 2px #08090A;
+  background-color:#F4A261;
+  border: 1px solid #08090A; 
+  border-radius: 5%;
+  padding: 10px 40px;
+}
+
+.btn:hover {
+  background-color:#F1870D;
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+  text-shadow: 6px 6px 2px #08090A;
+  width: 90%;
+}
+
+main.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: pulse-background 7s infinite;
+}
+
+/* --------------- Splash Screen -------------------- */
+h1.game-title {
+  margin-bottom: 10%;
+}
+
+a.start-btn {
+  margin-bottom: 15%;
+}
+
+img.comic-img {
+  position: absolute;
+  width: 15%;
+  bottom: 25%;
+  left: 15%;
+}
+
+img.crab-img {
+  position: absolute;
+  width: 15%;
+  bottom: 5%;
+  left: 5%;
+  animation: rotate 2s infinite;
+  z-index: 2;
+}
+
+img.jump-crab-img {
+  position: absolute;
+  width: 15%;
+  bottom: 5%;
+  right: 10%;
+  animation: jump 2s infinite;
+  z-index: 2;
+}
+
+img.shadow-crab-img {
+  position: absolute;
+  width: 15%;
+  bottom: 0.1%;
+  left: 5%;
+  z-index: 1;
+}
+
+
+img.shadow-jump-crab-img {
+  position: absolute;
+  width: 15%;
+  bottom: 0%;
+  right: 10%;
+  z-index: 1;
+  animation: bounce 2s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+div.instructions {
+  width: 50%;
+  height: 50%;
+  max-width: 600px;
+  min-height: 400px;
+  padding: 3% 2%;
+  border-radius: 15%;
+  position: absolute;
+  text-align: center;
+  line-height: 2em;
+  letter-spacing: 0.2em;
+  background-color: #353C84F3;
+  text-shadow: 1px 1px 2px #08090A;
+  border: 1px solid #F4FAFF;
+}
+
+img.keybinds {
+  width: 20%;
+}
+
+/* --------------- Game Over Screen -------------------- */
+h1.game-over-title {
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+p.game-final-score, p.game-final-level {
+  font-size: 1.2em;
+  text-align: center;
+  text-shadow: 1px 1px 2px #08090A;
+  letter-spacing: 0.2em;
+  width: 100%;
+  margin: 2%;
+}
+
+div.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+/* --------------- Game Screen -------------------- */
+
+main.main-container-game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: pulse-background 7s infinite;
+  background-image: url("../images/pattern.png");
+}
+
+div.game-container {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 650px;
+}
+
+canvas {
+  border: 4px solid #F4FAFF;
+}
+
+section.game-stats {
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 1px 1px 2px #08090A;
+  line-height: 0.8em;
+  letter-spacing: 0.2em;
+}
+
+img.crab-img-game-over {
+  position: absolute;
+  width: 15%;
+  bottom: 5%;
+  left: 42%;
+  animation: rotate 2s infinite;
+  z-index: 2;
+}
+
+img.shadow-crab-img-game-over{
+  position: absolute;
+  width: 15%;
+  bottom: 0%;
+  left: 42;
+  z-index: 1;
+}

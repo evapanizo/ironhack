@@ -1,0 +1,22 @@
+/* Typography */
+
+h1 {
+  font-size: 1.6rem;
+}
+
+/* Carousel */
+
+.carousel {
+  width: 100%;
+}
+
+.btn-outline-secondary {
+  font-size: 1rem;
+  width: 15%;
+}
+
+/* Features section */
+
+.feature {
+  padding: 1.8rem 0;
+}

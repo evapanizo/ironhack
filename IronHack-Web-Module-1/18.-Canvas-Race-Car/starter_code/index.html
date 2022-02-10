@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Island Racer</title>
+</head>
+<body>
+  <div class="game-intro">
+    <img src="./images/logo.png" alt="" class="logo-img">
+    <br>
+    <button id="start-button">StartGame</button>
+    <p>Use the left and right arrow to control the car!</p>
+    <img src="./images/arrows.png" alt="" class="arrows-img">
+    <div id="gameover-container" class="hidden">
+      <p>Game Over</p>
+      <p>Your final score: <span id="final-score"></span></p>
+    </div>
+  </div>
+  <div id="score-container" class="hidden">
+      <p>Score: <span id="score"></span></p>
+  </div>
+  <canvas id="game-board" class="hidden" width="400px" height="600px">
+    
+  </canvas>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="Canvas.js"></script>
+  <script type="text/javascript" src="Player.js"></script>
+  <script type="text/javascript" src="Obstacle.js"></script>
+</body>
+</html>

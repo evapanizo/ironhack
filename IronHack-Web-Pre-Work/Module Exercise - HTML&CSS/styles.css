@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', 'Lucida Grande', 'sans-serif';
+}
+
+h1{
+  font-size: 3em;
+  margin-bottom: 40px;
+  width: 800px;
+} 
+
+h2{
+  font-size: 2em;
+  margin-bottom: 10px;
+} 
+
+p{
+  line-height: 30px;
+  font-size: 1.1em;
+}
+
+nav {
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding: 7px 0;
+  height: 20px;
+  font-size: 80%;
+}
+
+nav a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+nav span {
+  margin: 0 0 0 15px;
+}
+
+.top-left {
+  float: left;
+  padding: 0;
+  margin: 0 0 0 20px;
+  height: 20px;
+}
+
+.top-links {
+  float: right;
+  padding: 0;
+  margin: 0 20px 0 0;
+  height: 20px;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.header{
+  height: 600px;
+  color: white;
+  background-image: url(images/city-scape.svg);
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+}
+
+.header .header-search-bar{
+  height: 60px;
+}
+
+.header .npm-logo{
+  height: 83%;
+  margin: 5px 10px;
+  width: 7%;
+  float: left;
+}
+
+.header form{
+  height: 70%;
+  margin: 7px 0px;
+  width: 70%;
+  float: left;
+}
+
+.header .search-bar{
+  height: 90%;
+  width: 100%;
+  padding: 0 10px;
+  background-color: rgb(31, 82, 111);
+}
+
+.header .header-search-bar-links{
+  height: 50%;
+  margin: 15px 10px;
+  width: 10%;
+  float: left;
+  font-size: 0.8em;
+  text-align: center;
+  margin-left: 40px;
+}
+
+.header .bear-logo{
+  height: 80%;
+  margin: 5px 0;
+  width: 5%;
+  float: left;
+}
+
+.header .header-center{
+  margin: 0 auto;
+  width: 600px;
+  position: relative;
+  top: 100px;
+  left: 70px;
+  float: left;
+}
+
+.header .header-link{
+  background-color: rgb(240, 146, 51);
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  margin: 40px 0;
+  padding: 14px 40px;
+  border-radius: 25px;
+}
+
+.collab-section{
+  height: 600px;
+  background-color: rgb(39, 53, 71);
+  color: white;
+}
+
+.collab-section .collab{
+  height: 50%;
+  width: 1100px;
+  margin: 0px auto;
+  padding: 150px 0;
+}
+
+.collab-text{
+  float: right;
+  width: 50%;
+}
+
+.collab ul,
+.collab p{
+  line-height: 40px;
+  font-size: 0.9em;
+}
+
+.collab a{
+  color: white;
+  text-decoration: none;
+}
+
+.collab .collab-link{
+  background-color: rgb(203, 56, 55);
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  margin: 5px 0;
+  padding: 3px 50px;
+  border-radius: 25px;
+  font-size: 1em;
+}
+
+.whatis{
+  height: 600px;
+  color: white;
+  background-image: url(images/forklift.svg);
+  background-size: cover;
+  position: relative;
+}
+
+.whatis .whatis-text{
+  height: 30%;
+  width: 35%;
+  top: 150px;
+  left: 100px;
+  position: absolute;  
+
+}
+
+.whatis p{
+  line-height: 30px;
+  font-size: 0.9em;
+}
+
+.whatis .whatis-link{
+  background-color: rgb(49, 68, 88);
+  color: white;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 85px;
+  margin: 10px 0;
+  padding: 3px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+}
+
+.blocks p{
+  color: rgb(135, 145, 156);
+  font-size: 0.9em;
+}
+
+.blocks h2,
+.blocks h3{
+  color: rgb(83, 88, 98);
+}
+
+.blocks .blocks-text{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0 40px;
+  text-align: center;
+}
+
+.blocks .blocks-articles{
+  width: 1200px;
+  margin: 0 auto;
+  height: 375px;
+}
+
+.blocks .find,
+.blocks .discover,
+.blocks .build{
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.blocks .discover{
+  margin: 0 5px;
+}
+
+.blocks img{
+width: 60%;
+margin: 10px 55px;
+}
+
+.blocks a{
+  color: rgb(208, 74, 73);
+  text-decoration: none;
+}
+
+.blocks-articles p{
+  width: 300px;
+  margin: 10px auto;
+}

@@ -1,0 +1,73 @@
+/* ---- Reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Stack & Queue ---- */
+.controls-container {
+  width: 30%;
+}
+
+.controls-container > * {
+  margin-top: 10px !important;
+}
+
+.structure {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.structure-list {
+  width: 30%;
+  margin-top: 15px;
+  margin-right: 35px;
+}
+
+.structure-list > * {
+  background-color: #E9E9E9;
+  margin-top: 2px;
+  height: 42px;
+}
+
+.take-list {
+  width: 60%;
+  margin-top: 15px;
+  padding: 0px;
+  max-height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.take-list > li {
+  list-style-type: none;
+  font-size: 22px;
+  margin: 5px;
+}
+
+.active-item {
+  background-color: #4DACE9;
+  color: whitesmoke;
+}
+
+#error-stack-message, #error-queue-message {
+  color: #DE5E59;
+  font-size: 12px;
+}
+
+#stack-flow-alert, #queue-flow-alert {
+  color: #DE5E59;
+  border-color: #DE5E59;
+  background-color: #F3E2E2;
+  font-size: 16px;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+<main class="page-container">
+  <header class="search-intro">
+    <img src="/images/SEARCH.png" alt="Search" class="title" >
+    <p> Find out the trainers that have the Pokemon you are looking for!</p>
+  </header>
+  <section class="searcher">
+    <p> Which Pokemon are you interested in?</p>
+    <form action="/search" method="GET" class="search-form">
+      <input id="pokemon-search" type="text" class="form-inputs" name="pokemon" placeholder="Enter a Pokemon"><br>
+      <div id="search-options"></div>
+      <input type="submit" value="Search" class="auth-btn">
+    </form>
+    <% include ../partials/notifications %>
+  </section>
+  <section>
+    <% trainers.forEach( trainer => { %>
+      <a href="/profile/<%= trainer._id %>" class="user-link">
+        <div class="search-profile-container">
+          <div class="img-search-container">
+            <img src="<%= trainer.avatar %>" alt="<%= trainer.name %>'s avatar" class="profile-img-search">
+          </div>
+          <div class="info-search-container">
+            <p class="user-name"><%= trainer.username %></p>
+            <p class="user-telegram"><%= trainer.telegram %></p>
+          </div>
+        </div>
+      </a>
+      </div>
+    <% }) %>
+  </section>
+  <% include ../partials/navbar.ejs %>
+  <script src="/javascripts/axios.js"></script>
+  <script src="/javascripts/check-search.js"></script>
+</main>
+

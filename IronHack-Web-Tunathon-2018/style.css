@@ -1,0 +1,215 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF-medium"
+}
+
+img {
+  width: 100%;
+}
+
+
+/* ---- typography ---- */
+@font-face {
+  font-family: "Abril";
+  src: url("assets/fonts/AbrilFatface-Regular.ttf");
+}
+@font-face {
+  font-family: "SF-bold";
+  src: url("assets/fonts/SF-Pro-Display-Bold.otf");
+}
+@font-face {
+  font-family: "SF-heavy";
+  src: url("assets/fonts/SF-Pro-Display-Heavy.otf");
+}
+@font-face {
+  font-family: "SF-medium";
+  src: url("assets/fonts/SF-Pro-Display-Medium.otf");
+}
+@font-face {
+  font-family: "SF-regular";
+  src: url("assets/fonts/SF-Pro-Display-Regular.otf");
+}
+@font-face {
+  font-family: "SF-semibold";
+  src: url("assets/fonts/SF-Pro-Display-Semibold.otf");
+}
+
+h1{
+  font-family: "Abril";
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 50px;
+}
+
+h2 {
+  font-family: "SF-heavy";
+} 
+
+
+/* ---- layout ---- */
+a {
+  user-select: none;
+  text-decoration: none;
+  color: black;
+}
+.container {
+  margin: 0 40px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+/* ---- header ---- */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-size: 12px;
+  z-index: 2;
+}
+
+#main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav img {
+  width: 30px;
+}
+
+.subscribe-btn{
+  border-radius: 20px; 
+  color:white;
+  text-transform: uppercase;
+  background-color: #e56153;
+  padding: 3% 5%;
+}
+
+
+/* ---- section 1 ----*/
+
+#intro {
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#intro img{
+  width: 70%;
+}
+
+#intro p{
+  color: rgb(151, 149, 149);
+  line-height: 20px;
+  font-size: 16px;
+}
+
+#intro h2{
+  color: #e56153;
+  font-size: 20px;
+}
+
+/* ---- section 2 ----*/
+
+#action iframe {
+  width: 100%;
+  height: 300px;
+}
+
+#subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 250px;
+}
+
+#subscribe input {
+  border: 1px solid darkgrey;
+  background-color: rgb(231, 228, 228);
+  height: 50px;
+  padding-left: 10px; 
+}
+
+#subscribe p {
+  font-size: 18px;
+}
+
+#subscribe .subscribe-btn {
+  width: 60%;
+  align-self: center;
+}
+
+/* ---- section 3 ---- */
+
+#local-benefits { 
+  background-color: #c7e553;
+  border-radius: 20px;
+  padding: 50px 20px 10px 20px;
+  line-height: 25px;
+}
+
+.circle-img {
+  width: 40%;
+}
+
+#center-img {
+  position: relative;
+  top: 60px;
+  left: 90px;
+}
+
+/* ---- section 4 ---- */
+
+#health-benefits {
+  padding-top: 50px;
+}
+
+#health-benefits p {
+  color: rgb(151, 149, 149);
+}
+
+#health-benefits article {
+  margin: 30px 0;
+}
+
+
+/* ---- footer ---- */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer img {
+  width: 40%;
+  height: 30%;
+}

@@ -1,0 +1,135 @@
+/* ---- Structures ---- */
+
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: block;
+}
+
+input {
+  display: none;
+}
+
+button {
+  width: 25%;
+}
+
+/* ---- Navigation Bar ---- */
+
+
+#menu-container {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 90px;
+  border-bottom: 1px solid #979797;
+  background-color: white;
+}
+
+#navigation-bar {
+  position: static;
+  padding: 0px;
+  border-bottom: 0px;
+  width: 50%;
+}
+
+#navigation-bar img {
+  width: 50%;
+}
+
+#menu-list {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 0px;
+  width: 50%;
+  border-left: 0px;
+}
+
+#menu-list li {
+  padding: 0px;
+  font-size: 1.3rem;
+}
+
+#menu-list li:nth-child(4) {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+}
+
+/* ---- Header ---- */
+
+header {
+  padding-top: 10%;
+  padding-bottom: 4%;  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 4rem;
+  line-height: 60px;
+}
+
+header p {
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+#description-text, #header-img-container {
+  width: 45%;
+}
+
+#description-text {
+  padding-top: 20px;
+}
+
+#description-text button{
+  width: 35%;
+}
+
+#header-img-container img {
+  width: 90%;
+}
+
+/* ---- Main ---- */
+/* - Trial Section - */
+
+#trial-form button {
+  width: 35%;
+}
+
+#trial-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ---- Footer ---- */
+
+#options-contact-section {
+  justify-content: space-between;
+}
+
+#social-language-section{
+  width: 40%;
+}
+
+#social-container img{
+  width: 12%;
+}

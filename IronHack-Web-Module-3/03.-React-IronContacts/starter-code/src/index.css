@@ -1,0 +1,64 @@
+/* ---- Reset ---- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 20px 100px 0px 100px;
+}
+
+/* ---- Buttons ---- */
+
+button {
+  padding: 0px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px 15px 30px 0px;
+  padding: 30px;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  background-color: #217DB8;
+  color: whitesmoke;
+}
+
+.btn-delete {
+  margin: 0;
+}
+
+.btn-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+/* ---- Contact ---- */
+
+.contact-img {
+  width: 100px;
+}
+
+/* ---- Table ---- */
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  width: 200px;
+}

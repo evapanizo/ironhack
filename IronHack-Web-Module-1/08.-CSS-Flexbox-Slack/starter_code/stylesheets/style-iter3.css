@@ -1,0 +1,60 @@
+/* ---- Typography ---- */
+
+html {
+  font-size: 14px;
+}
+
+/* ---- Structures ---- */
+
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.line {
+  width: 50px;
+  height: 6px;
+  margin: 6px;
+}
+
+/* ---- Header ---- */
+
+header p {
+  line-height: 40px; 
+}
+
+/* ---- Navigation Bar ---- */
+
+#menu-list li {
+  padding: 40px 20px;
+}
+
+/* ---- Main ---- */
+/* - Companies Section - */
+
+#companies-section button {
+  margin: 10px 0px 40px 0px;
+}
+
+#companies-section p {
+  line-height: 40px; 
+}
+
+.company-logo-container {
+  width: 33%;
+}
+
+.company-logo-container:nth-child(-n+4){
+  border-bottom: 1px solid #979797;
+  border-left: 0px;
+}
+
+.company-logo-container:nth-child(n+4){
+  border-bottom: 0px;
+  border-left: 0px;
+}
+
+.company-logo-container:nth-child(3n+2){
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+}

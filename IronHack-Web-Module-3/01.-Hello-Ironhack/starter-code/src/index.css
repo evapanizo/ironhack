@@ -1,0 +1,85 @@
+/* ---- Reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 60px;
+  font-family: sans-serif;
+}
+
+/* ---- NavBar ---- */
+
+.nav-bar {
+  background-color: #1F2535;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 30px 50px;
+}
+
+/* ---- Welcome ---- */
+
+.welcome {
+  color: whitesmoke;
+  background-color: #1F2535;
+  height: 500px;
+  padding: 80px 50px 30px 50px;
+}
+
+.welcome h1 {
+  margin: 0;
+  font-size: 60px;
+}
+
+.welcome p {
+  width: 300px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 100;
+  margin: 0;
+  padding-bottom: 100px;
+  color: #D8D8D8;
+}
+
+.welcome a {
+  color: #1F2535;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* ---- Features ---- */
+
+.react-features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 0px 50px;
+}
+
+.react-features article {
+  padding: 50px;
+}
+
+.react-features img {
+  width: 120px;
+}
+
+.react-features h2 {
+  font-weight: 500;
+}
+
+.react-features p {
+  color: #808080;
+  font-weight: 100;
+}

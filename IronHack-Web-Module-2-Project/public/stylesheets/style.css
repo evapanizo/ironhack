@@ -1,0 +1,495 @@
+/* ---- RESET ---- */
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* ---- TYPOGRAPHY ---- */
+
+@font-face{
+  font-family: Grobold;
+  font-weight: 300;
+  src: url(../fonts/GROBOLD.ttf);
+}
+
+body {
+  color:#232B2B;
+  font-size: 15px;
+  line-height: 147%;
+  font-family: Grobold;
+  letter-spacing: 1px;
+}
+
+/* ---- ERROR 500 ---- */
+#server-error-container {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/500.png');
+  background-size: cover;
+  text-align: center;
+}
+
+#server-error-title {
+  color: #E9E9E9;
+  padding: 20% 10% 0% 10%;
+  margin: 0%;
+  line-height: 2em;
+}
+
+#server-error-text {
+  color: #E9E9E9;
+  font-size: 1.2em;
+  margin-top: 60%;
+  padding: 0% 15%;
+  line-height: 50px;
+}
+
+/* ---- HOMEPAGE ---- */
+
+.auth-container {
+  margin-top: 230px;
+  text-align: center; 
+  padding: 0px 25px 25px 25px;
+}
+
+.home {
+  background-image: url("/images/flat4.png");
+  background-size: cover;
+}
+
+.poketrade {
+  padding: 70px 25px 0px 25px;
+}
+
+.main-link {
+  background-color: #c80c06;
+  border-radius: 20px;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+/* ---- SIGN UP ---- */
+
+.title {
+  width: 70%;
+  padding-top: 40px;
+}
+
+.auth {
+  background-color: #ED403A;
+  height: 100%;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.auth-form {
+  padding-top: 20px;
+  line-height: 30px;
+}
+
+.sign-up-img {
+  background-color: #ED403A;
+  margin-top: 30px;
+}
+
+.pokemon-img {
+  width: 80%;
+}
+
+.auth-btn {
+  color: #386CBA;
+  background-color: #FECC2F;
+  border-radius: 15px;
+  border: 2px solid #386CBA;
+  padding: 2px 20px;
+  margin-top: 10px;
+}
+
+.auth-link {
+  color: #386CBA;
+  background-color: #FECC2F;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 2px solid #386CBA;
+  padding: 9px 27px;
+  margin-top: 10px;
+}
+
+.auth-notification{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.auth-notification div{
+  width: 60%;
+  font-size: 0.8em;
+}
+
+.form-inputs, .search-input {
+  border-radius: 15px;
+  padding: 2% 4%;
+  font-family: Grobold;
+  font-size: 0.9em;
+  color: grey;
+}
+
+/* ---- LOG IN ---- */
+
+.trainer-girl, .trainer-boy  {
+  width: 20%;
+}
+
+.field {
+  margin-top: 3%;
+}
+
+.log-in-img {
+  margin-top: 28px;
+}
+
+/* ---- PROFILE ---- */
+
+.profile-container {
+  background-color: #ED403A;
+  color: whitesmoke;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+.profile-options {
+  padding: 30px 0px 0px 0px;;
+  text-align: center;
+}
+
+.editpr {
+  color: #386CBA;
+  background-color: #FECC2F;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 2px solid #386CBA;
+  padding: 9px 27px;
+  margin-top: 30px;
+}
+
+.trainer-profile {
+  text-align: center;
+}
+
+.profile-title h1 {
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+
+.other-trainer-profile {
+  text-align: center;
+}
+
+.other-trainer-profile h1{
+  margin: 0;
+  padding: 40px 0;
+}
+
+.avatar {
+  width: 70%;
+  border-radius: 150px;
+  border: 4px solid #386CBA;
+}
+
+.trainer-info, .trainer-description, .telegram-info {
+  margin-top: 20px;
+}
+
+.trainer-description {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.telegram-icon {
+  width: 5%;
+}
+
+.telegram-text {
+  display: inline;
+}
+
+.trainer-age-location {
+  display: inline;
+}
+
+.gender-img {
+  width: 8%;
+  padding-right: 10px;
+}
+
+.nav-options {
+  padding-top: 20px;
+}
+
+/* ---- EDIT PROFILE ---- */
+
+.edit {
+  background-color: #ED403A;
+  padding-top: 10px;
+  color: whitesmoke;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.edit-link {
+  padding: 9px 18px;
+}
+
+/* ---- ERROR MESSAGE ---- */
+
+.alert-danger {
+  color: #FECC2F;
+}
+
+/* ---- NAV-BAR ---- */
+
+.navbar {
+  background-color: #FECC2F;
+  border: 5px solid #386CBA;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar-img {
+  width: 55%;
+}
+
+.navbar form {
+  width: 22%;
+  text-align: center;
+}
+
+.navbar a {
+  display: block;
+  width: 25%;
+  text-align: center;
+}
+/* ---- TRADES ---- */
+
+.hidden {
+  display: none;
+}
+
+#trades-title {
+  width: 50%;
+  vertical-align: middle;
+}
+
+#trades-title-icon {
+  width: 15%;
+  vertical-align: middle;
+}
+
+#trades-header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.page-container {
+  background-color: #ED403A;
+  color: whitesmoke;
+  padding-bottom: 100px;
+  min-height: 100vh;
+}
+
+.pkmn-img {
+  width: 50%;
+}
+
+.trash-icon {
+  width: 10%;
+}
+
+.add-btn {
+  width: 5%;
+  vertical-align: middle;
+}
+
+.list-title {
+  font-size: 1.4em;
+  padding: 30px 0px 0px 20px;
+}
+
+.ul-pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 20px 0px 20px;
+  padding: 0px 0px 20px 0px;
+}
+
+.pkmn-container {
+  width: 45%;
+  margin-top: 5%;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  background-color: #EB706C;
+  border-radius: 20px;
+}
+
+.pkmn-container:hover {
+  background-color: #6C94EB;
+}
+
+.pkmn-li {
+  list-style-type: none;
+  display: inline;
+}
+
+.delete-form {
+  display: inline;
+}
+
+/* ---- ADD TRADE TITLE ---- */
+.add-trade-title {
+  text-align: center;
+  margin: 0%;
+  padding: 10% 5%;
+  line-height: 50px;
+}
+
+.add-pokemon-container{
+  background-color:#ED403A;
+  color: whitesmoke;
+  min-height: 100vh;
+}
+
+.search-pokemon{
+  text-align: center;
+}
+
+.add-trades-link {
+  color: #386CBA;
+  background-color: #FECC2F;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 2px solid #386CBA;
+  padding: 2px 28px;
+  margin-top: 10px;
+}
+
+#error-message {
+  padding-top: 10px;
+}
+
+.pokemon-box{
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+
+#checkbox-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox-tick, .checkbox-label {
+  display: inline;
+}
+
+#hidden-btn {
+  width: 30%;
+}
+
+/* ---- SEARCH ---- */
+.search-intro {
+  text-align: center;
+  margin: 0 10px;
+}
+
+.searcher {
+  text-align: center;
+  margin: 30px 10px;
+}
+
+.search-form {
+  margin: 15px 0px;
+}
+
+.profile-img-search {
+  width: 60%;
+  border-radius: 150px;
+  border: 4px solid #386CBA;
+  vertical-align: middle;
+  margin: 10px 0px;
+}
+
+.search-profile-container {
+  width: 90%;
+  margin: 20px auto;
+  border: 2px solid whitesmoke;
+  background-color: #EB706C;
+  border-radius: 15px;
+  display: flex;
+}
+
+.info-search-container, .img-search-container {
+  width: 50%;
+  text-align: center;
+}
+
+.info-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+.user-link {
+  text-decoration: none;
+  color: whitesmoke;
+} 
+
+#search-options li {
+  list-style: none;
+}
+
+#search-options ul {
+  padding: 0;
+}
+
+.search-options {
+  margin: 10px auto;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+  background-color: #EB706C; 
+  width: 40%;
+}

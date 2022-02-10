@@ -1,0 +1,160 @@
+/* ---- Reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* ---- Typography ---- */
+
+body {
+  color: #686868;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#1C5380 33%, white 0%);
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  color: #06365F;
+  margin: 0px 0px 20px 0px;
+  font-size: 2em;
+  width: 65%;
+  line-height: 40px;
+}
+
+strong {
+  color: black;
+}
+
+/* ---- Structures ---- */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ---- Main Container ---- */
+
+#main-container {
+  justify-content: center;
+  padding: 70px 0px 50px 0px;
+}
+
+/* ---- Wireframes Section ---- */
+
+#wireframes-section {
+  width: 30%;
+}
+
+#wireframes-section img {
+  width: 300px;
+}
+
+/* ---- Presentation Section ---- */
+
+#presentation-section {
+  width: 50%;
+}
+
+#brand-logo img {
+  width: 300px;
+}
+
+#intro-container {
+  background-image: url('../images/frame.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 30px 60px 0px 60px;
+}
+
+#intro-container p {
+  margin-bottom: 13px;
+}
+
+/* ---- Title Article ---- */
+
+#title-container {
+  justify-content: space-between;
+}
+
+/* ---- Login Button ---- */
+
+#login-btn {
+  width: 100px;
+  padding: 5px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient( #1C5380, #578FBD);
+  border: 1px solid #06365F;
+  border-radius: 5px;
+  align-self: center;
+}
+
+#login-btn img {
+  width: 18px;
+  vertical-align: middle;
+}
+
+#login-btn a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 900;
+  font-size: 0.9em;
+}
+
+/* ---- Badges ---- */
+
+#badge-container {
+ margin-top: 40px;
+}
+
+#iphone-badge {
+  width: 32%;
+  margin-right: 20px;
+}
+
+#android-badge {
+  width: 30%;
+}
+
+/* ---- Footer ---- */
+
+#footer-container {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.8em;
+}
+
+#footer-links {
+  justify-content: space-around;
+  width: 75%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  color: #1C5380;
+}
+
+#footer-copyright {
+  width: 25%;
+}

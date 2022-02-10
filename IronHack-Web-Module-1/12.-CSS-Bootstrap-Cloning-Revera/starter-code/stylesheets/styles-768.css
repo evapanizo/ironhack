@@ -1,0 +1,38 @@
+/* Typography */
+
+h1 {
+  width: 70%;
+}
+
+/* Carousel */
+
+#carousel-section {
+  position: relative;
+}
+
+#carousel-text {
+  position: absolute;
+  width: 85%;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: auto;
+  color: whitesmoke;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 2rem;
+  height: 4rem;
+}
+
+.btn-outline-secondary {
+  color: #D3D0D0;
+  border-color: #D3D0D0;
+  width: 20%;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #D3D0D0;
+  border-color: #D3D0D0;
+}

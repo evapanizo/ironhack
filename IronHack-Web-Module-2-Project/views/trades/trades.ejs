@@ -1,0 +1,43 @@
+<main class="page-container">
+  <header id="trades-header">
+    <img src="/images/exchange.ico" alt="trades title" id="trades-title-icon"> 
+    <img src="/images/TRADES.png" alt="trades title" id="trades-title">
+  </header>
+  <section class="pokemon-list">
+    <p class="list-title">My Pokemon
+      <a href="/trades/add/myPokemon">
+        <img src="/images/add.png" class="add-btn" alt="Add icon">
+      </a>
+    </p>
+    <ul class="ul-pokemon-list">
+      <% trainer.myPokemon.forEach( (pokemon, index) => { %>
+        <div class="pkmn-container">
+          <img src="<%= pokemon.image %>" class="pkmn-img" alt="<%= pokemon.name %> image"><br>
+          <li class="pkmn-li"><%= pokemon.name %></li>
+          <form method="POST" action="/trades/<%= index %>/myPokemon/delete" class="delete-form">
+            <input type="image" src="images/trash.png" class="trash-icon" alt="Delete"/>
+          </form>
+          </div>
+      <% }) %>
+    </ul>
+  </section>
+  <section class="pokemon-list">
+    <p class="list-title">Wish List
+      <a href="/trades/add/wishList">
+        <img src="/images/add.png" class="add-btn" alt="Add icon">
+      </a>
+    </p>
+    <ul class="ul-pokemon-list">
+      <% trainer.wishList.forEach( (pokemon, index) => { %>
+      <div class="pkmn-container">
+        <img src="<%= pokemon.image %>"  class="pkmn-img" alt="<%= pokemon.name %> image"><br>
+        <li class="pkmn-li"><%= pokemon.name %></li>
+        <form method="POST" action="/trades/<%= index %>/wishList/delete" class="delete-form">
+          <input type="image" src="images/trash.png" class="trash-icon" alt="Delete"/>
+        </form>
+        </div>
+      <% }) %>
+    </ul>
+  </section>
+  <% include ../partials/navbar.ejs %>
+</main>
